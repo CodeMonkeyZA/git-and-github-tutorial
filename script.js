@@ -6,6 +6,6 @@ function count() {
 
     document.getElementById("counter").innerHTML = countNo;
     
-    document.getElementById("counterBtn").innerHTML = "Clack!";
+    document.getElementById("counterBtn").innerHTML = "Clicked!";
 
 }

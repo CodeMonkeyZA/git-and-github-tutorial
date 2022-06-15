@@ -11,18 +11,15 @@
 <body class="bg-dark text-light">
 
     <div class="text-center">
-        <div class="container counter">
-            <h1 class="head">Git Dummy Project</h1>
-    
-            <div class="m-2" id="counter">0</div>
-    
-            <button onclick="count()" id="counterBtn" class="btn btn-primary">Click!</button>
-    
+        <div class="container headCont">
+            <h1 class="head">Git Learning Project</h1>
         </div>
     
         <div class="container">
-            <h2>Git Tutorial on this Video</h2>
-            <iframe width="60%" height="500" src="https://youtu.be/USjZcfj8yxE"></iframe>
+            <div class="container description">
+                <h2 class="descHead">Git Tutorial on this Video</h2>
+                <a href="https://youtu.be/USjZcfj8yxE"><button class="btn btn-primary button">See Video</button></a>
+            </div>
             <div class="container description">
                 <h3 class="descHead">Notes</h3>
                 <p>Start the git process by typing "<span class="code">git init</span>" in the command line of your project.</p>
@@ -36,11 +33,12 @@
                 <p>"<span class="code">git branch [branch name]</span>" Adds a new branch to the repository.</p>
                 <p>"<span class="code">git checkout [branch name]</span>" Moves to the code instance in the selected branch.</p>
                 <p>"<span class="code">git merge [branch name]</span>" Merges the selected branch into the master/main branch.</p>
-                
-                <!-- https://youtu.be/USjZcfj8yxE?t=353 Video at current time -->
-
             </div>
         </div>
+
+        <div class="m-2" id="counter">0</div>
+        <button onclick="count()" id="counterBtn" class="btn btn-primary button">Counter Click!</button>
+
     </div>
 
    <script src="script.js"></script>
