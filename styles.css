@@ -2,19 +2,30 @@
     margin-bottom: 20px;
     margin-top: 20px;
     padding: 15px;
-    background: midnightblue;
+    background: darkslategray;
     border-radius: 15px;
-    width: 30%;
+    width: 50%;
 }
 
 .description {
     border: solid 2px #fff;
     border-radius: 15px;
-    width: 800px;
+    width: 60%;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 0;
+}
+
+.description p {
+    padding: 10px;
 }
 
 .code {
     color: orange;
+}
+
+.descHead {
+    background: #fff;
+    color: #000;
+    border-radius: 12px 12px 0 0;
 }
