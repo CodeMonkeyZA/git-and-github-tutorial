@@ -13,6 +13,7 @@
     <div class="text-center">
         <div class="container headCont">
             <h1 class="head">Git/Github Learning Project</h1>
+            <h5>Please select one of the accordions to see my notes.</h5>
         </div>
 
         <hr>
@@ -67,22 +68,35 @@
                                 <p>Start the process by accessing/creating a <a href="https://github.com">Github account</a> and creating a new repository. From here, you will be able to access some quick scripts to push your code into the online repository.</p>
                                 <p>"<span class="code">git remote -v</span>" Will check to see if your repository is being used in an online instance.</p>
                                 <p>"<span class="code">git remote add [main] [the url to your github repository]</span>" Will create a link to your online repository.</p>
-                                <p>"<span class="code">git push -u origin master</span>" Will send the code to the online repository and sync the changes. This may prompt for login details to make sure you are accredited.</p>
+                                <p>"<span class="code">git push -u origin [BranchName]</span>" Will send the code to the online repository and sync the changes. This may prompt for login details to make sure you are accredited.</p>
+                                <p>"<span class="code">git pull origin [BranchName]</span>" Retrieves the online repository and syncs any changes to your local one.</p>
+                                <p>"<span class="code">git clone [repository Url]</span>" To download anyone elses repository to your PC. [NB! Please make sure that you are in a new directory before you clone.]</p>
+                                <p>If you would like to actively work on someone elses repository, you will have to <span class="code">fork</span> it which will split the repository into your account and you can make changes there. After which you can commit/upload and <span class="code">Create a Pull Request</span> to the main developers. If they accept the proposal then your fork will merge into their main repository.</p>
                             </div>
                         </div>
                     </div>
                   </div>
                 </div>
+                <div class="accordion-item bg-dark">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Counter
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="container text-light">
+                        <hr>
+                        <h3>Counter</h3>
+                        <div class="m-2" id="counter">0</div>
+                        <button onclick="count()" id="counterBtn" class="btn btn-primary button">Counter Click!</button>
+                        <button onclick="counterClear()" id="clearCount" class="btn btn-primary button">Clear</button>
+                        <hr>
+                    </div>
+                  </div>
+                </div>
               </div>
         </div>
-<!-- Random change to pull -->
         <hr>
-
-        <div class="container">
-            <h3>Counter</h3>
-            <div class="m-2" id="counter">0</div>
-            <button onclick="count()" id="counterBtn" class="btn btn-primary button">Counter Click!</button>
-        </div>
 
     </div>
 
